@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Enquiry — Akshat Chemicals, Andheri East, Mumbai</title>
+<meta name="description" content="Send a product enquiry to Akshat Chemicals. Call 022-49730799 or WhatsApp the team. A-501 Citi Point Premises, Andheri East, Mumbai 400059.">
+<link rel="canonical" href="https://www.akshatchemicals.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact &amp; Enquiry — Akshat Chemicals, Andheri East, Mumbai">
+<meta property="og:description" content="Send a product enquiry to Akshat Chemicals. Call 022-49730799 or WhatsApp the team. A-501 Citi Point Premises, Andheri East, Mumbai 400059.">
+<meta property="og:url" content="https://www.akshatchemicals.com/contact.html">
+<meta property="og:site_name" content="Akshat Chemicals">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact &amp; Enquiry — Akshat Chemicals, Andheri East, Mumbai">
+<meta name="twitter:description" content="Send a product enquiry to Akshat Chemicals. Call 022-49730799 or WhatsApp the team. A-501 Citi Point Premises, Andheri East, Mumbai 400059.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Manrope:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=11">
+</head>
+<body>
+<style>
+@keyframes ringDraw{to{stroke-dasharray:439.82 62.83}}
+@keyframes triSlide{0%{opacity:0;transform:translateX(-22px) scale(.6)}70%{opacity:1;transform:translateX(5px) scale(1.05)}100%{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes wordUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.logo-ring{stroke-dasharray:0 502.65;animation:ringDraw 1.9s cubic-bezier(.4,0,.2,1) forwards}
+.logo-tri{opacity:0;transform-origin:132px 100px;animation:triSlide 1s cubic-bezier(.34,1.56,.64,1) .8s forwards}
+.brand-txt{opacity:0;animation:wordUp .8s ease-out 1.3s forwards}
+@media(prefers-reduced-motion:reduce){.logo-ring{stroke-dasharray:439.82 62.83;animation:none}.logo-tri,.brand-txt{opacity:1;animation:none}}
+</style>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html" aria-label="Akshat Chemicals home">
+      <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle class="logo-ring" cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-dashoffset="-31.42" stroke-linecap="round"/>
+        <polygon class="logo-tri" points="164,100 116,81 116,119" fill="#C79A3B"/>
+      </svg>
+      <span class="brand-txt">
+        <span class="brand-name">AKSHAT <span class="lt">CHEMICALS</span></span>
+        <span class="brand-tag">Importers &amp; Dealers • Est. 2007</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html" class="active">Contact</a>
+      <a class="btn btn-red sm" href="contact.html#enquiry-form">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow light">Contact &amp; Enquiry</span>
+    <h1>A firm quote within 24 working hours.</h1>
+    <p>Send an enquiry below — the full details reach our sales team instantly, by email and on record.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:3.5rem">
+  <div class="wrap" style="display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start" id="contact-grid">
+    <form class="form-card gs-up" id="enquiry-form" novalidate>
+      <h3>Product Enquiry</h3>
+      <div class="frow">
+        <div class="field"><label for="f-name">Your name *</label><input id="f-name" name="name" required autocomplete="name" placeholder="Full name"></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" placeholder="Company / firm"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+91 …"></div>
+        <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="f-product">Product</label><select id="f-product" name="product"><option value="General enquiry">General enquiry</option></select></div>
+        <div class="field"><label for="f-qty">Quantity needed</label><input id="f-qty" name="quantity" placeholder="e.g. 500 kg / 10 drums"></div>
+      </div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Grade, packing, delivery location, target price…"></textarea></div>
+      <button type="submit" class="btn btn-red" style="width:100%;justify-content:center">Send Enquiry</button>
+      <div class="fstatus" id="fstatus" role="status"></div>
+      <p class="fnote">Your enquiry is emailed to our sales team and logged in our enquiry records. We never share your details.</p>
+    </form>
+
+    <div class="info-card gs-up">
+      <h3 style="font-size:1.4rem;margin-bottom:1.6rem">Reach us directly</h3>
+      <div class="iline"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Head office</small>A-501, Citi Point Premises, J B Nagar, Andheri Kurla Road, Andheri (E), Mumbai — 400 059</span></div>
+      <div class="iline"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 21V8l7-5 7 5v13"/><path d="M13 21v-6h-4v6M17 21h4v-9l-4-3"/></svg></span><span><small>Warehouse</small>Aanant Compound, Gala No. 547, Mahtre Compound, Anjur Phata Road, Bhiwandi</span></div>
+      <div class="iline"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h5l2 5-3 2a13 13 0 0 0 5 5l2-3 5 2v5a2 2 0 0 1-2 2A17 17 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg></span><span><small>Landline</small><a href="tel:+912249730799">022-49730799</a> · <a href="tel:+912249608271">49608271</a> · <a href="tel:+912249608272">49608272</a></span></div>
+      <div class="iline"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small><a href="mailto:akshatchemicals@gmail.com">akshatchemicals@gmail.com</a></span></div>
+      <h3 style="font-size:1.15rem;margin:1.8rem 0 .4rem">Talk to the team</h3>
+      <div class="person"><span>Uday Mehta</span><a class="wa" href="https://wa.me/919223502988" target="_blank" rel="noopener">WhatsApp →</a></div>
+      <div class="person"><span>Brijesh Shah</span><a class="wa" href="https://wa.me/919223432344" target="_blank" rel="noopener">WhatsApp →</a></div>
+      <div class="person"><span>Paras Gandhi</span><a class="wa" href="https://wa.me/919892856050" target="_blank" rel="noopener">WhatsApp →</a></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <iframe class="map" loading="lazy" title="Akshat Chemicals location map" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Citi+Point+Premises,+J+B+Nagar,+Andheri+Kurla+Road,+Andheri+East,+Mumbai+400059&output=embed"></iframe>
+  </div>
+</section>
+<style>@media(max-width:960px){#contact-grid{grid-template-columns:1fr!important}}</style>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <div class="ftr-brand">
+          <svg width="56" height="56" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-dasharray="439.82 62.83" stroke-dashoffset="-31.42" stroke-linecap="round"/>
+            <polygon points="164,100 116,81 116,119" fill="#C79A3B"/>
+          </svg>
+          <span class="brand-name" style="font-family:var(--f-display);font-weight:900;color:#fff;font-size:1.3rem">AKSHAT <span style="color:var(--royal-soft)">CHEMICALS</span></span>
+        </div>
+        <p style="font-size:.92rem;max-width:40ch">Importers and dealers of bulk drugs, APIs, speciality and fine chemicals — supplying Indian industry from Mumbai since 2007.</p>
+      </div>
+      <form class="ftr-news" id="news-form">
+        <h4>Market updates &amp; price circulars</h4>
+        <div class="ftr-news-row">
+          <input type="email" name="email" required placeholder="Work email">
+          <button class="btn btn-red sm" type="submit">Subscribe</button>
+        </div>
+        <p class="fnote" id="news-status" style="color:#5C7396">Occasional circulars only. No spam, ever.</p>
+      </form>
+    </div>
+    <div class="ftr-g">
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Product Catalogue</a></li>
+          <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          <li><a href="assets/akshat-chemicals-catalogue.pdf" download>Download Catalogue (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html?cat=api">Bulk Drugs &amp; APIs</a></li>
+          <li><a href="products.html?cat=fine">Speciality &amp; Fine Chemicals</a></li>
+          <li><a href="products/paracetamol.html">Paracetamol</a></li>
+          <li><a href="products/isopropyl-alcohol-ip.html">Isopropyl Alcohol IP</a></li>
+          <li><a href="products/glycerine-ip-usp.html">Glycerine IP/USP</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="products.html">Pharmaceutical</a></li>
+          <li><a href="products.html">Veterinary</a></li>
+          <li><a href="products.html">Food &amp; Beverage</a></li>
+          <li><a href="products.html">Cosmetics</a></li>
+          <li><a href="products.html">Industrial &amp; Fine Chem</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office &amp; Warehouse</h4>
+        <ul>
+          <li><b style="color:#fff">Head office:</b> A-501, Citi Point Premises, J B Nagar, Andheri Kurla Road, Andheri (E), Mumbai — 400 059 · <a href="https://www.google.com/maps?q=Citi+Point+Premises,+J+B+Nagar,+Andheri+East,+Mumbai" target="_blank" rel="noopener" style="color:var(--gold)">Map →</a></li>
+          <li><b style="color:#fff">Warehouse:</b> Aanant Compound, Gala 547, Anjur Phata Road, Bhiwandi</li>
+          <li><a href="tel:+912249730799"><span data-co="phone">022-49730799</span></a> / 49608271 / 49608272</li>
+          <li><a href="mailto:akshatchemicals@gmail.com"><span data-co="email">akshatchemicals@gmail.com</span></a></li>
+          <li><a href="https://wa.me/919223502988" target="_blank" rel="noopener">WhatsApp: 92235 02988</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© <span data-year></span> Akshat Chemicals. All rights reserved. <span style="opacity:.45;font-family:var(--f-mono);font-size:.68rem">· build v11</span></span>
+      <span class="ftr-cert">GST Registered · CoA Every Batch · MSDS Available · Batch Traceability · Import Documentation · Since 2007</span>
+      <button class="totop" id="totop" aria-label="Back to top">↑ Top</button>
+    </div>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <div class="fab-menu" id="fab-menu">
+    <a href="tel:+912249730799" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M4 4h5l2 5-3 2a13 13 0 0 0 5 5l2-3 5 2v5a2 2 0 0 1-2 2A17 17 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg><span>Call</span></a>
+    <a href="https://wa.me/919223502988?text=Hello%20Akshat%20Chemicals%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.3-.3.6-.4.8-.4h.5c.2 0 .4 0 .6.5l1 2.1c.1.2.1.3 0 .5l-.3.5-.5.5c-.1.2-.3.3-.1.6.1.3.7 1.3 1.6 2 1.1 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4.1 0 .1.5-.1 1z"/></svg><span>WhatsApp</span></a>
+    <a href="mailto:akshatchemicals@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>Email</span></a>
+    <a href="assets/akshat-chemicals-catalogue.pdf" download aria-label="Download catalogue"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg><span>Catalogue</span></a>
+  </div>
+  <button class="fab-btn" id="fab-btn" aria-label="Contact options" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 8.5-8.5 8.38 8.38 0 0 1 8.5 8.5z"/></svg>
+  </button>
+</div>
+
+<script src="assets/config.js?v=11"></script>
+<script src="assets/site.js?v=11"></script>
+<script src="assets/products-data.js?v=11"></script>
+<script src="assets/pricing.js?v=11"></script>
+<script src="assets/overrides.js?v=11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/main.js?v=11"></script>
+</body>
+</html>

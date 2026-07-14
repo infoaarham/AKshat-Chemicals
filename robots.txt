@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /tools/
+Sitemap: https://www.akshatchemicals.com/sitemap.xml

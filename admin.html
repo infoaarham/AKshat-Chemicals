@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Enquiry Dashboard | Akshat Chemicals</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Manrope:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.6rem 0}
+.kpi div{background:linear-gradient(150deg,var(--navy-900),var(--navy-950));color:#fff;border-radius:var(--r-md);padding:1.3rem}
+.kpi b{font-family:var(--f-display);font-size:2rem;display:block;color:var(--gold)}
+.kpi span{font-family:var(--f-mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:#93A7C4}
+.asearch{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem;align-items:center}
+.asearch input,.asearch select{border:1.5px solid var(--line);border-radius:10px;padding:.75rem 1rem;font-family:inherit;font-size:.92rem}
+.asearch input{flex:1;min-width:200px}
+.enq-t select,.enq-t input{border:1px solid var(--line);border-radius:6px;padding:.3rem .4rem;font-size:.8rem;font-family:inherit;max-width:120px}
+.src-pill{font-family:var(--f-mono);font-size:.6rem;padding:.15rem .5rem;border-radius:5px;background:var(--ice);color:var(--steel)}
+.st-New{color:var(--royal);font-weight:800}.st-Pending{color:#B8860B;font-weight:800}
+.st-Quoted{color:#7C3AED;font-weight:800}.st-Converted{color:#2E8B4A;font-weight:800}.st-Closed{color:var(--steel)}
+.mode-note{font-size:.8rem;padding:.7rem 1rem;border-radius:9px;margin-top:1rem}
+.mode-live{background:#EAF6EC;color:#2E8B4A}.mode-local{background:#FFF6E5;color:#B8860B}
+.row-del{color:var(--red);background:none;border:0;font-weight:800;cursor:pointer}
+</style>
+</head>
+<body class="admin-body">
+<div class="admin-shell" style="max-width:1320px">
+  <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap">
+    <svg width="52" height="52" viewBox="0 0 200 200"><rect width="200" height="200" rx="36" fill="#081C3A"/><circle cx="100" cy="100" r="72" fill="none" stroke="#fff" stroke-width="12" stroke-dasharray="395 57" stroke-dashoffset="-28" stroke-linecap="round"/><polygon points="158,100 114,83 114,117" fill="#C79A3B"/></svg>
+    <div style="flex:1"><h1 style="font-size:1.6rem">Enquiry Dashboard</h1>
+    <p style="font-size:.82rem;color:var(--steel)"><a href="index.html" style="color:var(--red);font-weight:800">← site</a> · <a href="tools/price-updater.html" style="color:var(--royal);font-weight:800">price updater</a> · <span id="sheet-link"></span></p></div>
+    <button class="btn btn-line sm" id="dark">◐ Dark</button>
+  </div>
+
+  <div class="admin-card" id="gate">
+    <h2 style="font-size:1.1rem;margin-bottom:1rem">Enter passcode</h2>
+    <div class="field" style="max-width:300px"><input id="pass" type="password" placeholder="Passcode" autocomplete="current-password"></div>
+    <button class="btn btn-navy sm" id="unlock">Unlock</button>
+    <p class="fnote">Passcode = ADMIN_KEY in assets/config.js (default <code>akshat2007</code>).</p>
+  </div>
+
+  <div id="panel" style="display:none">
+    <div class="mode-note" id="mode"></div>
+    <div class="kpi">
+      <div><b id="k-total">0</b><span>Total enquiries</span></div>
+      <div><b id="k-today">0</b><span>Today</span></div>
+      <div><b id="k-new">0</b><span>Pending (New)</span></div>
+      <div><b id="k-quoted">0</b><span>Quotation sent</span></div>
+      <div><b id="k-conv">0</b><span>Converted</span></div>
+      <div><b id="k-rate">0%</b><span>Conversion rate</span></div>
+    </div>
+    <div class="admin-card">
+      <div class="asearch">
+        <input id="q" type="search" placeholder="Search name, company, product, phone, ID…">
+        <select id="fstat"><option value="">All statuses</option><option>New</option><option>Pending</option><option>Quoted</option><option>Converted</option><option>Closed</option></select>
+        <button class="btn btn-navy sm" id="refresh">↻ Refresh</button>
+        <button class="btn btn-line sm" id="csv">⬇ CSV</button>
+        <button class="btn btn-line sm" id="xls">⬇ Excel</button>
+        <button class="btn btn-line sm" onclick="print()">🖨 Print</button>
+      </div>
+      <div style="overflow-x:auto"><table class="enq-t" id="tbl">
+        <thead><tr><th>ID</th><th>Date</th><th>Name / Company</th><th>Contact</th><th>Product</th><th>Pack / Qty</th><th>Message</th><th>Status</th><th>Assigned</th><th>Remarks</th><th>Quote</th><th>Conv.</th><th>Priority</th><th>Type</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+      <p class="empty-note" id="empty" style="display:none">No enquiries yet.</p>
+    </div>
+  </div>
+</div>
+<script src="assets/config.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>(s||'').toString().replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LIVE = typeof CONFIG!=="undefined" && !!CONFIG.GAS_URL;
+let ROWS=[], HEAD=[];
+
+document.getElementById('dark').onclick=()=>document.body.classList.toggle('dark');
+document.getElementById('unlock').onclick=unlock;
+document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+function unlock(){
+  if($('#pass').value!==(CONFIG&&CONFIG.ADMIN_KEY||'akshat2007'))return alert('Wrong passcode');
+  $('#gate').style.display='none';$('#panel').style.display='block';load();
+}
+async function load(){
+  if(LIVE){
+    $('#mode').className='mode-note mode-live';
+    $('#mode').textContent='● LIVE — connected to the Google Sheet database. Edits here write back to the Sheet; edits in the Sheet appear on Refresh.';
+    try{
+      const r=await fetch(CONFIG.GAS_URL+'?key='+encodeURIComponent(CONFIG.ADMIN_KEY));
+      const j=await r.json();
+      if(!j.ok)throw 0;
+      HEAD=j.headers;
+      ROWS=j.rows.map(r=>Object.fromEntries(HEAD.map((h,i)=>[h,r[i]])));
+    }catch(_){$('#mode').className='mode-note mode-local';$('#mode').textContent='⚠ Could not reach the Google backend — showing this browser\'s local log instead. Check GAS_URL / deployment access.';ROWS=localRows();}
+  }else{
+    $('#mode').className='mode-note mode-local';
+    $('#mode').textContent='◌ LOCAL MODE — Google backend not connected yet (see GOOGLE-SETUP.md). Showing enquiries made from this browser; emails still arrive via FormSubmit.';
+    ROWS=localRows();
+  }
+  render();
+}
+function localRows(){
+  let l=[];try{l=JSON.parse(localStorage.getItem('ac_enquiries')||'[]')}catch(_){}
+  return l.map((d,i)=>({"Enquiry ID":"LOCAL-"+(l.length-i),"Date":(d.submittedAt||'').split(',')[0],"Time":(d.submittedAt||'').split(',')[1]||'',
+    "Name":d.name,"Company":d.company,"Phone":d.phone,"Email":d.email,"Product":d.product,"Packing":d.packing,
+    "Quantity":d.quantity,"Message":d.message,"Source Page":d.page,"Status":"New","Assigned To":"","Remarks":"",
+    "Quotation Sent":"No","Converted":"No"}));
+}
+function kpis(rows){
+  const today=new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'}).replace(/ /g,'-');
+  $('#k-total').textContent=rows.length;
+  $('#k-today').textContent=rows.filter(r=>(r.Date||'').includes(today.split('-')[0])&&(r.Date||'').toLowerCase().includes(today.split('-')[1].toLowerCase())).length;
+  $('#k-new').textContent=rows.filter(r=>r.Status==='New'||r.Status==='Pending').length;
+  $('#k-quoted').textContent=rows.filter(r=>r["Quotation Sent"]==='Yes'||r.Status==='Quoted').length;
+  const conv=rows.filter(r=>r.Converted==='Yes'||r.Status==='Converted').length;
+  $('#k-conv').textContent=conv;
+  $('#k-rate').textContent=rows.length?Math.round(conv/rows.length*100)+'%':'0%';
+}
+function repeat(r){const k=(r.Phone||r.Email||'').trim();if(!k)return 0;return ROWS.filter(x=>(x.Phone||'').trim()===k||(x.Email||'').trim()===(r.Email||'').trim()).length;}
+function due(r){const d=r["Follow-up Date"];if(!d)return false;const t=new Date(d);return !isNaN(t)&&t<=new Date();}
+function render(){
+  const q=($('#q').value||'').toLowerCase(), fs=$('#fstat').value;
+  const rows=ROWS.filter(r=>(!fs||r.Status===fs)&&(!q||JSON.stringify(r).toLowerCase().includes(q)));
+  kpis(ROWS);
+  const opts=st=>['New','Pending','Quoted','Converted','Closed'].map(o=>`<option ${o===st?'selected':''}>${o}</option>`).join('');
+  const yn=v=>['No','Yes'].map(o=>`<option ${o===(v||'No')?'selected':''}>${o}</option>`).join('');
+  document.querySelector('#tbl tbody').innerHTML=rows.map(r=>`<tr data-id="${esc(r["Enquiry ID"])}">
+    <td style="font-family:var(--f-mono);font-size:.72rem">${esc(r["Enquiry ID"])}${r["PDF Link"]&&r["PDF Link"].startsWith('http')?` <a href="${esc(r["PDF Link"])}" target="_blank" title="PDF">📄</a>`:''}</td>
+    <td>${esc(r.Date)}<br><span class="src-pill">${esc(r.Time||'')}</span></td>
+    <td><b>${esc(r.Name)}</b>${repeat(r)>1?` <span class="src-pill" style="background:#EAF6EC;color:#2E8B4A" title="${repeat(r)} enquiries from this contact">↻ repeat ×${repeat(r)}</span>`:''}<br>${esc(r.Company)}</td>
+    <td><a href="#" class="hist" data-k="${esc(r.Phone||r.Email)}" title="Show this customer's history" style="color:inherit">${esc(r.Phone)}</a><br><a href="mailto:${esc(r.Email)}" style="color:var(--royal)">${esc(r.Email)}</a></td>
+    <td>${esc(r.Product)}</td>
+    <td>${esc(r.Packing)}<br>${esc(r.Quantity)}</td>
+    <td style="max-width:220px;font-size:.8rem">${esc(r.Message)}</td>
+    <td><select data-f="Status" class="st-${esc(r.Status)}">${opts(r.Status)}</select>${due(r)?'<br><span class="src-pill" style="background:#FDEDED;color:var(--red)">⏰ follow-up due</span>':''}</td>
+    <td><input data-f="Assigned To" value="${esc(r["Assigned To"])}" placeholder="—"></td>
+    <td><input data-f="Remarks" value="${esc(r.Remarks)}" placeholder="—"></td>
+    <td><select data-f="Quotation Sent">${yn(r["Quotation Sent"])}</select></td>
+    <td><select data-f="Converted">${yn(r.Converted)}</select></td>
+    <td><select data-f="Priority">${['Normal','High','Urgent'].map(o=>`<option ${o===(r.Priority||'Normal')?'selected':''}>${o}</option>`).join('')}</select></td>
+    <td><select data-f="Customer Type">${['New','Repeat','Key Account'].map(o=>`<option ${o===(r["Customer Type"]||'New')?'selected':''}>${o}</option>`).join('')}</select></td>
+    <td>${LIVE?'<button class="row-del" title="Delete">✕</button>':''}</td>
+  </tr>`).join('');
+  $('#empty').style.display=rows.length?'none':'block';
+}
+document.addEventListener('change',async e=>{
+  const el=e.target.closest('[data-f]');if(!el||!LIVE)return;
+  const id=el.closest('tr').dataset.id;
+  const row=ROWS.find(r=>r["Enquiry ID"]===id);if(row)row[el.dataset.f]=el.value;
+  try{await fetch(CONFIG.GAS_URL,{method:'POST',body:JSON.stringify({action:'update',key:CONFIG.ADMIN_KEY,id:id,fields:{[el.dataset.f]:el.value}})});}catch(_){alert('Could not save to Google Sheet');}
+  kpis(ROWS);
+});
+document.addEventListener('click',async e=>{
+  const h=e.target.closest('.hist');
+  if(h){e.preventDefault();document.getElementById('q').value=h.dataset.k;render();return;}
+  const del=e.target.closest('.row-del');if(!del)return;
+  const id=del.closest('tr').dataset.id;
+  if(!confirm('Delete enquiry '+id+' from the Google Sheet?'))return;
+  try{const r=await fetch(CONFIG.GAS_URL,{method:'POST',body:JSON.stringify({action:'delete',key:CONFIG.ADMIN_KEY,id:id})});
+    const j=await r.json();if(!j.ok)throw 0;ROWS=ROWS.filter(x=>x["Enquiry ID"]!==id);render();
+  }catch(_){alert('Delete failed');}
+});
+$('#q').addEventListener('input',render);
+$('#fstat').addEventListener('change',render);
+$('#refresh').onclick=load;
+function exportRows(sep,ext,mime){
+  if(!ROWS.length)return alert('Nothing to export.');
+  const cols=HEAD.length?HEAD:Object.keys(ROWS[0]);
+  const data=[cols.join(sep)].concat(ROWS.map(r=>cols.map(c=>'"'+String(r[c]||'').replace(/"/g,'""')+'"').join(sep))).join('\r\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob(['\ufeff'+data],{type:mime}));
+  a.download='akshat-enquiries.'+ext;a.click();
+}
+document.getElementById('csv').onclick=()=>exportRows(',','csv','text/csv');
+document.getElementById('xls').onclick=()=>exportRows('\t','xls','application/vnd.ms-excel');
+if(LIVE)$('#sheet-link').innerHTML='backend: <b style="color:#2E8B4A">Google Sheets connected</b>';
+else $('#sheet-link').innerHTML='backend: <b style="color:#B8860B">not connected — see GOOGLE-SETUP.md</b>';
+</script>
+</body>
+</html>
