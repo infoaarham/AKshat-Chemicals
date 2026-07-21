@@ -83,7 +83,7 @@ const LOWPOWER = (navigator.hardwareConcurrency && navigator.hardwareConcurrency
   raf = requestAnimationFrame(loop);
 })();
 
-/* ---------- 3D molecule (paracetamol) ---------- */
+/* ---------- 3D molecule (ibuprofen) ---------- */
 (() => {
   const holder = $("#molecule");
   if (!holder || typeof THREE === "undefined" || REDUCED || LOWPOWER) { if (holder) holder.style.display = "none"; return; }
@@ -101,10 +101,14 @@ const LOWPOWER = (navigator.hardwareConcurrency && navigator.hardwareConcurrency
     H:new THREE.MeshPhongMaterial({color:0xe9eef7,shininess:100}),
     b:new THREE.MeshPhongMaterial({color:0x8aa4cf,shininess:30}) };
   const R = { C:.46, O:.44, N:.45, H:.26 };
-  const atoms = [["C",-0.7,1.2,0],["C",0.7,1.2,0],["C",1.4,0,0],["C",0.7,-1.2,0],["C",-0.7,-1.2,0],["C",-1.4,0,0],
-    ["O",-2.8,0,.1],["H",-3.2,.85,.1],["N",2.8,0,.1],["H",3.2,.9,.15],["C",3.6,-1.1,.1],["O",3.15,-2.25,.15],["C",5.1,-.95,.05],
-    ["H",-1.25,2.15,0],["H",1.25,2.15,0],["H",1.25,-2.15,0],["H",-1.25,-2.15,0],["H",5.55,-1.93,.1],["H",5.5,-.4,.9],["H",5.45,-.42,-.82]];
-  const bonds = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[5,6],[6,7],[2,8],[8,9],[8,10],[10,11],[10,12],[0,13],[1,14],[3,15],[4,16],[12,17],[12,18],[12,19]];
+  const atoms = [ // ibuprofen C13H18O2 (para-disubstituted ring, isobutyl + propanoic acid)
+    ["C",-0.7,1.2,0],["C",0.7,1.2,0],["C",1.4,0,0],["C",0.7,-1.2,0],["C",-0.7,-1.2,0],["C",-1.4,0,0],
+    ["C",2.95,0,.12],["C",3.7,1.3,.2],["C",5.2,1.15,.12],["C",3.3,2.35,-.85],["C",3.35,2.0,1.5],
+    ["C",-2.95,0,-.12],["C",-3.7,-1.25,-.35],["C",-3.4,1.2,-.6],
+    ["O",-5.05,-1.3,-.2],["O",-3.15,-2.3,-.85],
+    ["H",-1.25,2.15,0],["H",1.25,2.15,0],["H",1.25,-2.15,0],["H",-1.25,-2.15,0],
+    ["H",3.2,-.85,.5],["H",5.6,.45,.86],["H",5.65,2.12,.3],["H",5.55,.78,-.85],["H",-5.45,-2.15,-.45]];
+  const bonds = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[2,6],[6,7],[7,8],[7,9],[7,10],[5,11],[11,12],[11,13],[12,14],[12,15],[0,16],[1,17],[3,18],[4,19],[6,20],[8,21],[8,22],[8,23],[14,24]];
   const mol = new THREE.Group();
   const v = i => new THREE.Vector3(atoms[i][1],atoms[i][2],atoms[i][3]);
   atoms.forEach(a => { const m = new THREE.Mesh(new THREE.SphereGeometry(R[a[0]],28,28), MAT[a[0]]); m.position.set(a[1],a[2],a[3]); mol.add(m); });
@@ -202,7 +206,7 @@ function ftileHTML(p){
 (() => {
   const el = $("#best-sellers");
   if (!el || typeof PRODUCTS === "undefined") return;
-  const DEFAULTS = ["albendazole-plain-ip-usp","methanol","n-methyl-piperazine","paracetamol","citric-acid","glycerine-ip-usp","isopropyl-alcohol-ip","propylene-glycol-ip-usp"];
+  const DEFAULTS = ["albendazole-ip-usp","ibuprofen-bp","n-methyl-piperazine","isopropyl-alcohol-ip","citric-acid","glycerine-ip-usp","toluene","ethyl-acetate"];
   let list = DEFAULTS;
   const F = (typeof SITE !== "undefined" && Array.isArray(SITE.featured)) ? SITE.featured : [];
   if (F.length) {
@@ -587,3 +591,22 @@ $$("[data-year]").forEach(e => e.textContent = new Date().getFullYear());
 
 
 
+
+
+/* ---------- v12: 3D tilt on category cards ---------- */
+(() => {
+  if (REDUCED || LOWPOWER || !matchMedia("(pointer:fine)").matches) return;
+  $$("[data-tilt]").forEach(card => {
+    let raf = null;
+    card.addEventListener("pointermove", e => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `perspective(900px) rotateX(${(-y*7).toFixed(2)}deg) rotateY(${(x*9).toFixed(2)}deg) translateY(-6px)`;
+        raf = null;
+      });
+    }, { passive: true });
+    card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+  });
+})();

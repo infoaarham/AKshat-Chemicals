@@ -1,3 +1,4 @@
+/* style.css */
 /* ================================================================
    AKSHAT CHEMICALS — premium industrial design system v2
    Deep navy · Royal blue · Steel · Premium white · Bold red accent
@@ -118,10 +119,10 @@ h1,h2,h3,h4,.display{font-family:var(--f-display);letter-spacing:-.025em;line-he
 @media(max-width:1060px){.hero-in{grid-template-columns:1fr}.molecule-wrap{max-height:360px;order:-1}}
 
 /* ------- marquee ------- */
-.marquee{background:linear-gradient(90deg,var(--red),#B31F1F);color:#fff;overflow:hidden;padding:1rem 0;position:relative;z-index:3}
-.marquee-track{display:flex;gap:4rem;white-space:nowrap;animation:mq 42s linear infinite;font-family:var(--f-mono);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
-.marquee-track span{display:inline-flex;gap:4rem;align-items:center}
-.marquee-track i{font-style:normal;color:var(--gold)}
+.marquee{background:linear-gradient(90deg,var(--red),#B31F1F);color:#fff;overflow:hidden;padding:1.25rem 0;position:relative;z-index:3}
+.marquee-track{display:flex;align-items:center;gap:5rem;white-space:nowrap;animation:mq 42s linear infinite;font-family:var(--f-mono);font-size:.95rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600}
+.marquee-track span{display:inline-flex;gap:5rem;align-items:center}
+.marquee-track i{font-style:normal;color:var(--gold);font-size:.72rem;vertical-align:middle}
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* ================= sections ================= */
@@ -465,7 +466,6 @@ h1,h2,h3,h4,.display{font-family:var(--f-display);letter-spacing:-.025em;line-he
 .hero-reel.swap .reel-b{opacity:.34}
 
 /* stat text card */
-.stat-txt{font-size:clamp(1.7rem,3vw,2.5rem)!important;letter-spacing:.04em;padding-top:.55rem}
 
 /* continuous section flow */
 .sec.ice{background:linear-gradient(180deg,#fff 0,var(--ice) 12%,var(--ice) 88%,#fff)}
@@ -582,3 +582,135 @@ img.fade.loaded{opacity:1}
 .ft-cta span{transition:transform .2s}
 .ftile:hover .ft-cta span{transform:translateX(3px)}
 @media(max-width:520px){.bs-grid{grid-template-columns:1fr}.ftile{padding:1.5rem 1.3rem 1.3rem}}
+
+/* ================= v12: V13 redesign layer ================= */
+.hero h1 .since{display:block;font-size:.42em;letter-spacing:.06em;color:#B9C9E2;font-weight:800;margin-top:.35em}
+.hero h1 .rl{background:linear-gradient(92deg,var(--red-hot),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* new why cards */
+.why.w2{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.04));transition:transform .3s cubic-bezier(.2,.7,.3,1),border-color .3s,box-shadow .3s}
+.why.w2::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold),var(--royal));opacity:0;transition:opacity .3s}
+.why.w2::after{content:"";position:absolute;left:-40%;top:-60%;width:80%;height:120%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 65%);transform:rotate(20deg);transition:transform .5s}
+.why.w2:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.34);box-shadow:0 22px 44px -18px rgba(0,0,0,.5)}
+.why.w2:hover::before{opacity:1}
+.why.w2:hover::after{transform:rotate(20deg) translateX(140%)}
+.why.w2 .ic{transition:transform .35s}
+.why.w2:hover .ic{transform:rotate(-8deg) scale(1.12)}
+.ic-gold{background:linear-gradient(140deg,#C79A3B,#8A6A1F)!important}
+.ic-green{background:linear-gradient(140deg,#2E8B4A,#1C5E30)!important}
+.ic-royal{background:linear-gradient(140deg,#1D4ED8,#0E2A78)!important}
+.ic-red{background:linear-gradient(140deg,#EF3B3B,#A31212)!important}
+/* 3D tilt categories */
+.cat[data-tilt]{transform-style:preserve-3d;will-change:transform}
+.cat[data-tilt] .cat-b{transform:translateZ(34px)}
+.cat[data-tilt] img{transition:transform .5s,filter .5s}
+.cat[data-tilt]:hover img{transform:scale(1.08);filter:brightness(1.08)}
+.cat[data-tilt]::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 30px 60px -24px rgba(4,16,31,.55);pointer-events:none;transition:box-shadow .3s}
+.cat[data-tilt]:hover::after{box-shadow:0 0 0 1.5px rgba(199,154,59,.55) inset,0 40px 80px -24px rgba(4,16,31,.7)}
+/* about: corporate profile grid */
+.prof-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.4rem;margin-top:3rem}
+.prof{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:1.7rem 1.6rem;box-shadow:var(--sh-md);border-top:3px solid var(--royal);transition:transform .28s,box-shadow .28s}
+.prof:nth-child(4n+2){border-top-color:var(--gold)}.prof:nth-child(4n+3){border-top-color:var(--red)}.prof:nth-child(4n){border-top-color:#2E8B4A}
+.prof:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
+.prof h3{font-size:1.05rem;margin-bottom:.5rem}
+.prof p{font-size:.9rem;color:var(--steel);line-height:1.6}
+/* founder */
+.founder-g{display:grid;grid-template-columns:330px 1fr;gap:3.4rem;align-items:center}
+@media(max-width:900px){.founder-g{grid-template-columns:1fr}}
+.founder-card{background:linear-gradient(165deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid var(--glass-line);border-radius:var(--r-lg);padding:2.2rem;text-align:center;color:#fff}
+.f-photo{width:168px;height:168px;border-radius:50%;margin:0 auto 1.4rem;background:linear-gradient(150deg,var(--royal),var(--navy-950));display:flex;align-items:center;justify-content:center;border:3px solid var(--gold);box-shadow:0 16px 40px -14px rgba(0,0,0,.6)}
+.f-photo span{font-family:var(--f-display);font-weight:900;font-size:3rem;color:#fff;letter-spacing:.04em}
+.founder-card h3{font-size:1.5rem}
+.f-role{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:.4rem 0 1.4rem}
+.dark-ticks li{color:#C3D2E8}
+.dark-ticks li b{color:#fff}
+.eyebrow.gold{color:var(--gold)}
+
+/* ================= v13 (V14 polish): homepage enterprise refinement ================= */
+
+/* ---- logo +20%, name & tagline up ---- */
+.brand-logo,.brand svg{width:64px;height:64px}
+@media(max-width:640px){.brand-logo,.brand svg{width:54px;height:54px}}
+.brand-name{font-size:1.62rem;letter-spacing:.005em}
+.brand-tag{font-size:.66rem;letter-spacing:.24em;color:#9DB0CE}
+@media(max-width:640px){.brand-name{font-size:1.32rem}}
+
+/* ---- navigation: larger, more spaced, premium ---- */
+.nav{gap:2.35rem}
+.nav>a:not(.btn){font-size:1.02rem;font-weight:650;letter-spacing:.005em;transition:color .25s cubic-bezier(.2,.7,.3,1)}
+.nav>a:not(.btn)::after{transition:width .3s cubic-bezier(.2,.7,.3,1)}
+
+/* ---- CTA button: taller, deeper shadow, premium hover (colors unchanged) ---- */
+.btn-red.sm{padding:.92rem 1.7rem;font-size:.96rem;border-radius:999px;
+  box-shadow:0 10px 26px -10px rgba(220,38,38,.55),0 2px 6px -2px rgba(220,38,38,.4);
+  transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s cubic-bezier(.2,.7,.3,1),filter .3s}
+.btn-red.sm:hover{transform:translateY(-2px);filter:saturate(1.06);
+  box-shadow:0 18px 40px -12px rgba(220,38,38,.62),0 3px 10px -2px rgba(220,38,38,.5)}
+.btn-red.sm:active{transform:translateY(0)}
+
+/* ---- hero typography: ~10% smaller, more breathing room ---- */
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.55rem);line-height:1.07;letter-spacing:-.018em}
+.hero h1 .since{margin-top:.6em;font-size:.4em}
+.hero .lead{max-width:60ch;margin-top:2.1rem;font-size:1.14rem;line-height:1.72}
+@media(min-width:1600px){.hero .lead{max-width:64ch}}
+.hero h1 .rl{padding-bottom:.04em}
+
+/* ================= premium KPI / statistics cards ================= */
+.stats-sec{background:linear-gradient(180deg,var(--navy-950),#061426);padding-top:2.5rem;padding-bottom:clamp(4rem,7vw,6rem)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;padding:0;background:transparent}
+@media(max-width:1024px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.stats{grid-template-columns:1fr}}
+.statc{
+  position:relative;overflow:hidden;isolation:isolate;
+  padding:2.2rem 1.6rem;border-radius:18px;min-height:220px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  background:
+    linear-gradient(158deg,rgba(21,42,80,.96),rgba(9,22,44,.98));
+  border:1px solid transparent;
+  background-clip:padding-box;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.06) inset,
+    0 20px 44px -22px rgba(4,12,28,.85),
+    0 6px 16px -10px rgba(4,12,28,.6);
+  transition:transform .42s cubic-bezier(.2,.7,.25,1),box-shadow .42s cubic-bezier(.2,.7,.25,1);
+}
+/* subtle gradient border ring */
+.statc::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
+  background:linear-gradient(150deg,rgba(199,154,59,.55),rgba(29,78,216,.28) 40%,rgba(255,255,255,.05) 75%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:2;
+}
+/* ambient corner glow + inner highlight */
+.statc::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(120% 90% at 15% 0%,rgba(120,160,240,.14),transparent 55%),
+    radial-gradient(90% 70% at 100% 100%,rgba(199,154,59,.12),transparent 60%);
+}
+.statc>*{position:relative;z-index:1}
+.statc:hover{transform:translateY(-7px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.09) inset,
+    0 34px 64px -24px rgba(4,12,28,.92),
+    0 10px 24px -12px rgba(29,78,216,.35);
+}
+/* animated sheen on hover */
+.sheen-layer,.statc .sheen{position:absolute;inset:0;z-index:1;pointer-events:none;border-radius:inherit;overflow:hidden}
+.statc .sheen::before{content:"";position:absolute;top:-60%;left:-75%;width:55%;height:220%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.16),transparent);
+  transform:rotate(18deg) translateX(-30%);transition:transform .85s cubic-bezier(.2,.7,.25,1)}
+.statc:hover .sheen::before{transform:rotate(18deg) translateX(360%)}
+/* icon lighting */
+.statc .s-ic{width:52px;height:52px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;
+  background:linear-gradient(150deg,rgba(29,78,216,.9),rgba(9,22,44,.7));
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 8px 20px -8px rgba(0,0,0,.6),0 1px 0 rgba(255,255,255,.14) inset}
+.statc .s-ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+  filter:drop-shadow(0 2px 5px rgba(120,160,240,.5))}
+.statc b{display:block;font-family:var(--f-display);font-weight:900;color:#fff;font-size:clamp(2.6rem,4vw,3.4rem);line-height:1;letter-spacing:-.02em;margin-bottom:.2rem}
+.statc b em{font-style:normal;color:var(--gold);font-size:.55em;font-weight:800;margin-left:.08em}
+.statc b.stat-txt{font-size:1.25rem;line-height:1.3;letter-spacing:-.01em;font-weight:800;display:block;margin-bottom:.4rem;overflow-wrap:break-word;hyphens:none}
+.statc b.stat-txt.long{font-size:1.05rem;letter-spacing:0;line-height:1.35}
+.statc>span:last-child{display:block;margin-top:.8rem;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#A7BADB}
+.statc.wide{grid-column:span 1}
+
+@media(prefers-reduced-motion:reduce){.statc,.statc:hover{transition:none;transform:none}.statc .sheen::before{display:none}}

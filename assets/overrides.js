@@ -1,820 +1,748 @@
-/* PRODUCT OVERRIDES — generated from products-master.xlsx on 14/7/2026, 12:33:40 pm */
+/* PRODUCT OVERRIDES — generated from the master Excel via tools/price-updater.html.
+   Controls availability, lead time, featured flag and status per product. */
 const OVERRIDES = {
  "aceclofenac-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C16H13Cl2NO4",
-  "cas": "89796-99-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "albendazole-plain-ip-usp": {
+ "albendazole-ip-usp": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "ABZ",
-  "formula": "C12H15N3O2S",
-  "cas": "54965-21-8",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
-  "status": "Active"
- },
- "albendazole-micronized-ip-usp": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C12H15N3O2S",
-  "cas": "54965-21-8",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "ambroxol-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Ambroxol hydrochloride",
-  "formula": "C13H18Br2N2O",
-  "cas": "18683-91-5",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "biotin": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "ciprofloxacin-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C17H18FN3O3",
-  "cas": "85721-33-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "dexamethasone-ip": {
+ "clotrimazole": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C22H29FO5",
-  "cas": "50-02-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "dexamethasone-sodium-phosphate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "diclofenac-sodium": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C14H10Cl2NNaO2",
-  "cas": "15307-79-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "diethylcarbamazine-citrate-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "domperidone-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C22H24ClN5O2",
-  "cas": "57808-66-9",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "etoricoxib-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Etorocoxib",
-  "formula": "C18H15ClN2O2S",
-  "cas": "202409-33-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "fenbendazole-bp-vet": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to BP VET monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C15H13N3O2S",
-  "cas": "43210-67-9",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "fluconazole-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C13H12F2N6O",
-  "cas": "86386-73-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "halquinol-60": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to VET monograph — assay per CoA",
-  "appearance": "Yellowish to brown powder",
-  "synonyms": "Chlorhydroxyquinoline, CHQ",
-  "formula": "Chlorinated 8-hydroxyquinolines (mixture)",
-  "cas": "8067-69-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "levofloxacin-ip": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C18H20FN3O4",
-  "cas": "100986-85-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "lumefantrine": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Benflumetol, Lumifenterine",
-  "formula": "C30H32Cl3NO",
-  "cas": "82186-77-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "methylcobalamin": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "Dark red crystalline powder (light-sensitive)",
-  "synonyms": "Mecobalamin, Vitamin B12",
-  "formula": "C63H91CoN13O14P",
-  "cas": "13422-55-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "metformin-hcl": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Metformin hydrochloride",
-  "formula": "C4H11N5·HCl",
-  "cas": "1115-70-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "mefenamic-acid": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Meffenamic acid",
-  "formula": "C15H15NO2",
-  "cas": "61-68-7",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "niacinamide-ip": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Nicotinamide, Vitamin B3",
-  "formula": "C6H6N2O",
-  "cas": "98-92-0",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "oxfendazole-bp-vet": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to BP VET monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C15H13N3O3S",
-  "cas": "53716-50-0",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "oxyclozanide": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to VET monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C13H6Cl5NO3",
-  "cas": "2277-92-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "ofloxacin": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C18H20FN3O4",
-  "cas": "82419-36-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "paracetamol": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Acetaminophen, APAP, 4-Acetamidophenol",
-  "formula": "C8H9NO2",
-  "cas": "103-90-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
-  "status": "Active"
- },
- "pantoprazole-sodium-ip": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Pantoprazole, Pentaprazole",
-  "formula": "C16H14F2N3NaO4S",
-  "cas": "138786-67-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "pyrantel-pamoate": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Pyrantel embonate",
-  "formula": "C11H14N2S·C23H16O6",
-  "cas": "22204-24-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "progesterone": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "",
-  "formula": "C21H30O2",
-  "cas": "57-83-0",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "ricobendazole": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to VET monograph — assay per CoA",
-  "appearance": "White to off-white crystalline powder",
-  "synonyms": "Albendazole sulfoxide, Albendazole oxide",
-  "formula": "C12H15N3O3S",
-  "cas": "54029-12-8",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "24-dichlorophenol": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "White to pale solid, phenolic odour",
-  "synonyms": "2,4-DCP",
-  "formula": "C6H4Cl2O",
-  "cas": "120-83-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "citric-acid": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP / FOOD monograph — assay per CoA",
-  "appearance": "White crystalline powder / colourless crystals",
-  "synonyms": "E330",
-  "formula": "C6H8O7",
-  "cas": "77-92-9 / 5949-29-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
-  "status": "Active"
- },
- "dimethyl-sulphate": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Colourless oily liquid",
-  "synonyms": "DMS, Methyl sulfate",
-  "formula": "C2H6O4S",
-  "cas": "77-78-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": false,
-  "status": "Active"
- },
- "ethyl-acetate": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Clear colourless liquid, fruity odour",
-  "synonyms": "EA, Acetic acid ethyl ester",
-  "formula": "C4H8O2",
-  "cas": "141-78-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "glycerine-ip-usp": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP / FOOD monograph — assay per CoA",
-  "appearance": "Clear, colourless, viscous liquid",
-  "synonyms": "Glycerol, Glycerin",
-  "formula": "C3H8O3",
-  "cas": "56-81-5",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
   "status": "Active"
  },
- "gum-acacia": {
+ "ibuprofen-bp": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / FOOD monograph — assay per CoA",
-  "appearance": "Off-white to pale yellow powder / tears",
-  "synonyms": "Gum Arabic, Acacia gum",
-  "formula": "Natural polysaccharide",
-  "cas": "9000-01-5",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "isopropyl-alcohol-ip": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP monograph — assay per CoA",
-  "appearance": "Clear colourless liquid, alcohol odour",
-  "synonyms": "IPA, Isopropanol, 2-Propanol",
-  "formula": "C3H8O",
-  "cas": "67-63-0",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "l-arginine-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "lactose-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "levamisole-hcl-vet": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "levetiracetam-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "levofloxacin-hemihydrate-ip-usp": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "levofloxacin-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "lumefantrine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "methylcobalamin": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "metformin-hcl": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "mefenamic-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "montelukast-sodium": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "niacinamide-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "oxfendazole-bp-vet": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "oxyclozanide": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "pantoprazole-sodium-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "propylparaben-plain": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "propylparaben-ip": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "progesterone": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "pyrantel-pamoate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ricobendazole": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sitagliptin": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sulfamethoxazole": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sulfasalazine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "tadalafil": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "trimethoprim": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "vildagliptin": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "acetic-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "acetone": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "acetonitrile": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "adipic-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "aniline-oil": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ascorbic-acid-coated": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "benzene": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "benzyl-chloride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "bisphenol-a": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "butyl-acetate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "butyl-carbitol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "butyl-cellosolve": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "bht": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "caustic-potash-flakes": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "caustic-soda-flakes": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "caustic-soda-lye": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "chloroform": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "citric-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "cyclohexane": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "cyclohexanone": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "diacetone-alcohol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "diethanolamine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "diethylene-glycol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "diisopropyl-ether": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "dimethyl-sulphate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "dmso": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "dmf": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "dicyandiamide": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ethyl-acetate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ethyl-bromide": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ethyl-chloroformate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ethylene-dichloride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "stearyl-alcohol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "glycerine-commercial": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "glyoxal-40": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydrobromic-acid-48": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydrated-lime": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydrazine-hydrate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydrogen-peroxide": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydroquinone": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydroxylamine-hydrochloride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "hydroxylamine-sulphate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "iso-butanol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "isophthalic-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
   "status": "Active"
  },
  "iodine-derivatives": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / TECH monograph — assay per CoA",
-  "appearance": "Violet-black crystals (iodine); white salts (derivatives)",
-  "synonyms": "Potassium iodide, Iodates",
-  "formula": "I2 (and salts)",
-  "cas": "7553-56-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "liquid-bromine": {
+ "l-tartaric-acid": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Dark red-brown fuming liquid",
-  "synonyms": "Bromine",
-  "formula": "Br2",
-  "cas": "7726-95-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "methylene-dichloride-ip": {
+ "maleic-anhydride": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / TECH monograph — assay per CoA",
-  "appearance": "Clear colourless volatile liquid",
-  "synonyms": "MDC, DCM, Dichloromethane",
-  "formula": "CH2Cl2",
-  "cas": "75-09-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "meta-dichlorobenzene": {
+ "methane-sulfonic-acid": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Colourless liquid",
-  "synonyms": "m-DCB, 1,3-Dichlorobenzene",
-  "formula": "C6H4Cl2",
-  "cas": "541-73-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "propylene-glycol-ip-usp": {
+ "methane-sulfonyl-chloride": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP / FOOD monograph — assay per CoA",
-  "appearance": "Clear, colourless, viscous liquid",
-  "synonyms": "PG, 1,2-Propanediol, MPG",
-  "formula": "C3H8O2",
-  "cas": "57-55-6",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
-  "status": "Active"
- },
- "sodium-borohydride": {
-  "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "White to greyish powder / granules",
-  "synonyms": "SBH, NaBH4",
-  "formula": "NaBH4",
-  "cas": "16940-66-2",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "sodium-benzoate": {
+ "mono-ethylene-glycol": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / USP / FOOD monograph — assay per CoA",
-  "appearance": "White granular or crystalline powder",
-  "synonyms": "E211, Benzoic acid sodium salt",
-  "formula": "C7H5NaO2",
-  "cas": "532-32-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
- "sorbitol-ip": {
+ "mek": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Conforms to IP / FOOD monograph — assay per CoA",
-  "appearance": "White powder / clear 70% solution",
-  "synonyms": "D-Sorbitol, E420",
-  "formula": "C6H14O6",
-  "cas": "50-70-4",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "mibk": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "mtbe": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "methylene-chloride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "mdi": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "n-propanol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
   "featured": false,
   "status": "Active"
  },
  "n-methyl-piperazine": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Clear colourless to pale yellow liquid, amine odour",
-  "synonyms": "1-Methylpiperazine, NMP (piperazine), Methyl piperazine",
-  "formula": "C5H12N2",
-  "cas": "109-01-3",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
   "status": "Active"
  },
- "methanol": {
+ "propyl-bromide": {
   "availability": "Enquire",
-  "lead": "Ex-stock: 1-3 working days / Indent: on quotation",
-  "purity": "Technical / commercial grade — assay per CoA",
-  "appearance": "Clear colourless volatile liquid",
-  "synonyms": "Methyl Alcohol, MeOH, Wood alcohol, Carbinol",
-  "formula": "CH3OH",
-  "cas": "67-56-1",
-  "image": "",
-  "video": "",
-  "docs": "",
-  "gallery": "",
-  "brochure": "",
-  "msds": "",
-  "coa": "",
-  "tds": "",
-  "featured": true,
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "normal-butanol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ortho-chloro-benzaldehyde": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "ortho-xylene": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "pentaerythritol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "phenol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "phthalic-anhydride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "polyol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "potassium-carbonate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "propionic-acid": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "pyridine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "pyrrolidine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sodium-benzoate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sodium-borohydride": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sodium-bromate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "sodium-bromide": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "styrene-monomer": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "tertiary-butanol": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "thf": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "toluene": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "tdi": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "triethyl-orthoformate": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "triethylamine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "triethanolamine": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
+  "status": "Active"
+ },
+ "vam": {
+  "availability": "Enquire",
+  "lead": "Ex-stock: 1–3 working days · Indent: on quotation",
+  "featured": false,
   "status": "Active"
  }
 };

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /tools/
-Sitemap: https://www.akshatchemicals.com/sitemap.xml
+Sitemap: https://infoaarham.github.io/AKshat-Chemicals/sitemap.xml

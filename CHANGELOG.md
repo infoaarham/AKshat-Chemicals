@@ -1,3 +1,35 @@
+## v12 — V13 Enterprise Redesign + full catalogue sync
+- CATALOGUE: fully synced to the official PDF — 124 products (42 pharma
+  APIs incl. Biotin, Ibuprofen BP, Sitagliptin, Tadalafil, Vildagliptin,
+  Montelukast + 82 industrial/fine chemicals: full solvents, acids,
+  alkalis, isocyanates, monomers & intermediates list) with real CAS,
+  formula, MW, applications, packing and storage on every page.
+  Removed products not in the new catalogue (incl. Paracetamol, Methanol,
+  Halquinol, Sorbitol, Gum Acacia, Liquid Bromine).
+- HERO: new heading (Importers & Stockists / Since 2007), CTA buttons,
+  badge chips and the yellow marquee line removed; lead mentions paint
+  manufacturers; 3D molecule is now Ibuprofen.
+- NO FIXED PRODUCT COUNTS anywhere — verified by automated scan.
+- WHY CHOOSE: four all-new cards (Premium Quality, Competitive Pricing,
+  24x7 Customer Assistance, Wide Range of Products) with new icons,
+  gradients, sheen hover; ALL QC references removed sitewide.
+- CATEGORIES: reordered (Import & Global Sourcing first) with true 3D
+  mouse tilt, depth, glow (auto-disabled on touch/low-power/reduced-motion).
+- Pan-India city chips removed; homepage Industries section removed;
+  footer reduced to Products / Quick Links / Contact / Newsletter.
+- ABOUT: complete corporate-profile redesign (history, mission, vision,
+  import network, warehousing, ethics, industries, future) + dedicated
+  Founder section (Uday Mehta, Founder & Proprietor only) + four trust
+  cards; Brijesh Shah & Paras Gandhi removed from every page incl. Contact.
+- Warehouse renamed to Anant and Company everywhere.
+- Product-page Downloads heading renamed Documents (buttons unchanged).
+- SEO now points at the live GitHub Pages URL (canonical, robots,
+  sitemap - 128 URLs).
+- Excel rebuilt: 234 packing rows, 124 product rows, Featured sheet with
+  the new default eight (Albendazole, Ibuprofen, N-Methyl Piperazine,
+  IPA, Citric Acid, Glycerine IP/USP, Toluene, Ethyl Acetate).
+- PDF catalogue regenerated for all 124 products. Build stamp v12.
+
 # CHANGELOG addition
 
 ## v11 — Media renderer root-cause fix
